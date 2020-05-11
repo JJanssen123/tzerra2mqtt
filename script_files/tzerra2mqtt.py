@@ -10,8 +10,6 @@
 #
 #    Written in 2012 by Jorg Janssen <http://www.zonnigdruten.nl/>
 
-# */5 * * * * python /i-data/1afa0d6a/admin/SunmasterPY.py >> /i-data/1afa0d6a/admin/cronlog.txt 2>&1
-
 import socket
 import paho.mqtt.publish as publish
 import json
