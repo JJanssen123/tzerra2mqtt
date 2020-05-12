@@ -9,7 +9,9 @@ Put the ip-address of the RS232 to TCP converter in settings.py.
 
 Connect the PC output of the heater to the ttl to RS232 converter using a RJ10/4P4C connector, for instance a cut in half telephone handset cable. Connect the ttl converter to the RS232 to TCP converter.
 
-![ttl converter and cable](https://github.com/JJanssen123/tzerra2mqtt/blob/master/images/1.jpg =100x100) ![ttl converter pins](https://github.com/JJanssen123/tzerra2mqtt/blob/master/images/2.jpg) ![connector in PC output](https://github.com/JJanssen123/tzerra2mqtt/blob/master/images/3.jpg) ![ttl converter and tcp converter](https://github.com/JJanssen123/tzerra2mqtt/blob/master/images/4.jpg)
+<img src="https://github.com/JJanssen123/tzerra2mqtt/blob/master/images/1.jpg" width=100>
+
+![ttl converter pins](https://github.com/JJanssen123/tzerra2mqtt/blob/master/images/2.jpg) ![connector in PC output](https://github.com/JJanssen123/tzerra2mqtt/blob/master/images/3.jpg) ![ttl converter and tcp converter](https://github.com/JJanssen123/tzerra2mqtt/blob/master/images/4.jpg)
 
 You will need the Eclipse Paho MQTT Python client library, use pip for installation: **pip3 install paho-mqtt**
 
