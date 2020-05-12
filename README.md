@@ -7,7 +7,7 @@ To use this script you need:
 
 Put the ip-address of the RS232 to TCP converter in settings.py.
 
-Connect the PC output of the heater to the ttl to RS232 converter using a RJ10/4P4C connector, for instance a cut in half telephone handset cable. Connect the ttl converter to the RS232 to TCP converter.
+Connect the PC output of the heater to the ttl to RS232 converter using a RJ10/4P4C connector, for instance a cut in half telephone handset cable. Connect the ttl converter to the RS232 to TCP converter. You do not need to power the ttl converter, it gets power from the heater.
 
 <img src="https://github.com/JJanssen123/tzerra2mqtt/blob/master/images/1.jpg" width=150>&nbsp;<img src="https://github.com/JJanssen123/tzerra2mqtt/blob/master/images/2.jpg" width=150>&nbsp;<img src="https://github.com/JJanssen123/tzerra2mqtt/blob/master/images/3.jpg" width=150>&nbsp;<img src="https://github.com/JJanssen123/tzerra2mqtt/blob/master/images/4.jpg" width=150>
 
