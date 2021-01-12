@@ -11,6 +11,8 @@ Connect the PC output of the heater to the ttl to RS232 converter using a RJ10/4
 
 <img src="https://github.com/JJanssen123/tzerra2mqtt/blob/master/images/1.jpg" width=150>&nbsp;&nbsp;&nbsp;<img src="https://github.com/JJanssen123/tzerra2mqtt/blob/master/images/2.jpg" width=150>&nbsp;&nbsp;&nbsp;<img src="https://github.com/JJanssen123/tzerra2mqtt/blob/master/images/3.jpg" width=150>&nbsp;&nbsp;&nbsp;<img src="https://github.com/JJanssen123/tzerra2mqtt/blob/master/images/4.jpg" width=150>
 
+(Instead of this you can also use a ESP8266 and the WifiTelnetToSerial example sketch in the Arduino IDE)
+
 You will need the Eclipse Paho MQTT Python client library, use pip for installation: **pip3 install paho-mqtt**
 
 The script returns the current running values of the heater. All values are sent as an mqtt message to your mqtt broker. In settings.py you can set the brokers address, the topic and some other mqtt stuff.
