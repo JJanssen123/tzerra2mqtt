@@ -18,3 +18,5 @@ The script returns the current running values of the heater. All values are sent
 The script is meant to run every minute (or 5) as a cronjob e.g. 
 
 **\* \* \* \* \* /usr/bin/python3 /home/pi/tzerra2mqtt/tzerra2mqtt.py > /home/pi/tzerra2mqtt/cronlog.txt**
+
+If you use Home Assistant, you can run set_hass_autodiscovery.py once to add the sensor entities to HA automatically.
