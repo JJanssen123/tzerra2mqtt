@@ -6,7 +6,9 @@ for entity in mqtt_autodiscovery_config:
     type = mqtt_autodiscovery_config[entity]["type"]    
     topic = (mqtt_hass_topic + '/' + type + '/' + device["model"] + '_' + device["name"] + '/' + entity + '/config').lower()
     
-    message = mqtt_autodiscovery_config[entity]["config"]    
+    message = mqtt_autodiscovery_config[entity]["config"] 
+    if("value_template" not in message):
+        message["value_template"] = "{{ value_json." + entity + " }}"
     message["name"] = entity
     message["unique_id"] = device["model"] + "_" + device["name"] + "_" + entity
     message["state_topic"] = (mqtt_base_topic + "/" + device["model"] + "/" + device["name"]).lower()
