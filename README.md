@@ -3,7 +3,7 @@ Python script for reading Remeha Tzerra central heating boiler data and send the
  
 To use this script you need:
 * a RS232 to TCP converter like <a target="_blank" href="https://nl.aliexpress.com/item/32807885568.html">this one</a>
-* a ttl to RS232 converter like <a target="_blank" href="https://nl.aliexpress.com/item/4000055222836.html">this one</a>.
+* a ttl to RS232 converter like <a target="_blank" href="https://nl.aliexpress.com/item/4001054540164.html">this one</a>.
 
 Put the ip-address of the RS232 to TCP converter in settings.py.
 
