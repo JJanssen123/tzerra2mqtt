@@ -44,6 +44,8 @@ params_used = dict({'Status': 0,
 
 # BEGIN PROGRAM ----------------------------------------------
 
+topic = (mqtt_base_topic + "/" + device["model"] + "/" + device["name"]).lower()
+
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)    
 s.settimeout(1)
 
@@ -71,7 +73,7 @@ else:
         # mqtt publish    
         mqttstring = json.dumps(params_used) 
         try:
-            publish.single(topic=mqtt_topic, payload=mqttstring, hostname=mqtt_broker, auth={'username':mqtt_username,'password':mqtt_password}, retain=True)
+            publish.single(topic=topic, payload=mqttstring, hostname=mqtt_broker, auth={'username':mqtt_username,'password':mqtt_password}, retain=True)
         except:
             Debug('mqtt publish failed', 1)
     s.close()
